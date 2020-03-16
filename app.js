@@ -8,7 +8,7 @@
 const tmi = require("tmi.js");
 const robot = require('robotjs');
 var player = require('play-sound')(opts = {});
-const { ConfigUsername, ConfigPassword, ConfigChannel, Prefix, rewardID } = require('./config.json');
+const { ConfigUsername, ConfigPassword, ConfigChannel, Prefix } = require('./config.json');
 const path = require("path");
 const JSONCommands = require("./commands.json");
 const JSONReedem = require("./Reedem_points.json");
@@ -38,22 +38,30 @@ client.on("chat", function(channel, user, message, self){
             //console.log(process.env.Path); Only include when debugging audio player
             console.log(JSONCommands[message].Response);
             client.action(ConfigChannel, JSONCommands[message].Response);
+			/*var i;
+            for (i = 0; i < JSONCommands[message].Keys.length; i++) {
+                console.log(JSONCommands[message].Keys[i]);
+                robot.keyTap(JSONCommands[message].Keys[i]);
+            } */
         } catch(err) { console.log(err)}
     }
-    else if(user['custom-reward-id'] === rewardID) { 
+    else if(user['custom-reward-id'] !== "undefined") { 
         try {
+			var ID = user['custom-reward-id'];
             var i;
-            for (i = 0; i < JSONReedem[message].Keys.length; i++) {
-                console.log(JSONReedem[message].Keys[i]);
-                robot.keyTap(JSONReedem[message].Keys[i]);
+            for (i = 0; i < JSONReedem[ID].Keys.length; i++) {
+                console.log(JSONReedem[ID].Keys[i]);
+                robot.keyTap(JSONReedem[ID].Keys[i]);
+				console.log(JSONReedem[ID].Keys[i]);
             } 
-            player.play(JSONReedem[message].Audio, (err) => {
+            /*player.play(JSONReedem[rewardID].Audio, (err) => {
                 if (err) console.log(`Could not play sound: ${err}`);
-            });
-            client.action(ConfigChannel, JSONReedem[message].Response);
-        } catch(err) {}
+            });*/
+            client.action(ConfigChannel, JSONReedem[ID].Response);
+        } catch(err) { console.log(err); }
   
     }
+	console.log(user['custom-reward-id']);
     console.log(user['message-type']);
 });
 
