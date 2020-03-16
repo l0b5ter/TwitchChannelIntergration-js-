@@ -64,3 +64,5 @@ How to solve some errors with script:
         * Script wont press any buttons.
         Solution: Take a look in the "Reedem_points.json" file, did you format the '"Keys" : ' the right way? Its supposed to be array format you know. Like ["b", "c", "9", "0"].
         
+        * Dont know what keybindings i can use.
+        Solution: Take a look at http://robotjs.io/docs/syntax, it sud have all the special keys. numbers and letters are just a or 3.
