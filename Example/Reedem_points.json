@@ -1,16 +1,16 @@
 {
     "TestHi": {
-        "Response": "",
+        "Response": " ",
         "Keys": ["a", "b", "c"],
         "Audio": ""
     },
     "screensize": {
-        "Response": "",
+        "Response": " ",
         "Keys": ["a", "b", "c"],
         "Audio": ""
     },
     "some": {
-        "Response": "",
+        "Response": " ",
         "Keys": ["a", "b", "c"],
         "Audio": "./Audio/0Godzilla.mp3"
     }
