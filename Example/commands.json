@@ -1,5 +1,9 @@
 {
     "&ping": {
-        "Response": "pong"
+        "Response": "pong",
+    },
+    "&hi": {
+        "Response": "hallo",
+		"Keys": ["a", "shift.:.c", "numpad_4"] //this will type aC4 
     }
 }
