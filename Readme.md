@@ -1,8 +1,8 @@
 # TwitchChannelIntergration
-Script-version: v0.2
-Last-modified: 16.03.2020
-Made by: lobster/loster31345 from WiAD
-Requested by: Myian (twitch.tv/myian).
+- Script-version: v0.2
+- Last-modified: 16.03.2020
+- Made by: lobster/loster31345 from WiAD
+- Requested by: Myian (twitch.tv/myian).
 
 # TwitchChannelIntergration is a twitch script that brings the streamer and the viewer closer.
 
