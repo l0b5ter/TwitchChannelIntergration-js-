@@ -57,8 +57,9 @@ How to solve some errors with script:
                         5. open CMD and type mplayer. if you get "'mplayer' is not recognized as an internal or external command,     
                            operable program or batch file." your attempt on adding the folder to the path failed. So try again. However if you get something else, its installed.                                                                                             
                         6. Now you can run the script and hear the audio.
-                    OS X:                                                                                                       
-                        By default afplay should be installed, open the terminal and type "$ which afplay". This sud return the path     * Script wont press any buttons.                                                                                              
+                    OS X:                                                              
+                        By default afplay should be installed, open the terminal and type "$ which afplay". This sud return the path   
+* Script wont press any buttons.                                                                                              
     - Solution: Take a look in the "Reedem_points.json" file, did you format the '"Keys" : ' the right way? Its supposed to be array format you know. Like ["b", "c", "9", "0"].                                                                                             
 * Dont know what keybindings i can use.                                                                                    
     - Solution: Take a look at http://robotjs.io/docs/syntax, it sud have all the special keys. numbers and letters are just a or 3.
