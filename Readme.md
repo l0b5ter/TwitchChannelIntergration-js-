@@ -45,23 +45,23 @@ Feel free to take a look at the script "app.js", however if you make a change do
 
 How to solve some errors with script:                                                                                                 
         * Sript returning error on first run (tmi error).                                                                     
-        Solution: Is there a folder named node_modules in your folder? If not the packages didnt get installed. Normally this comes from that you installed Nodejs as global and not localy. But to simple fix this download this zip(https://www.dropbox.com/s/uklz57zr29f004i/node_modules.rar?dl=1), and extract its content "node_modules" over to your folder.
-        * Script wont play any sound.
-        Solution: look into the console, is there a error like "Could not play sound: Error: Could'nt find a suitable audio player". Make sure you have a good audio player installed (default player doesnt work), also ive only tested with .mp3 files. 
-                  Installation of audio player.
-                    Windows: 
-                        1. Download MPlayer for Windows. Go to this page ("https://sourceforge.net/projects/mplayerwin/"), and click on the green Download button.
-                        2. Since its a zip file, extract it and put the folder somewhere safe. 
-                        3. Add the folder containing the mplayer.exe file to your system path so that mplayer.exe can be invoked from any location on your system. Follow the instructions from this tutorial ("https://www.computerhope.com/issues/ch000549.htm") to add the folder to your system path. Add it under the variable named "Path" in both the user variables and system variables.
-                        4. Save and hit OK.
-                        5. open CMD and type mplayer. if you get "'mplayer' is not recognized as an internal or external command,
-                           operable program or batch file." your attempt on adding the folder to the path failed. So try again. However if you get something else, its installed.
+        Solution: Is there a folder named node_modules in your folder? If not the packages didnt get installed. Normally this comes from that you installed Nodejs as global and not localy. But to simple fix this download this zip(https://www.dropbox.com/s/uklz57zr29f004i/node_modules.rar?dl=1), and extract its content "node_modules" over to your folder.       
+        * Script wont play any sound.                                                                                               
+        Solution: look into the console, is there a error like "Could not play sound: Error: Could'nt find a suitable audio player". Make sure you have a good audio player installed (default player doesnt work), also ive only tested with .mp3 files.                  
+                  Installation of audio player.                                                                               
+                    Windows:                                                                                                           
+                        1. Download MPlayer for Windows. Go to this page ("https://sourceforge.net/projects/mplayerwin/"), and click on the green Download button.                                                                                                              
+                        2. Since its a zip file, extract it and put the folder somewhere safe.                                         
+                        3. Add the folder containing the mplayer.exe file to your system path so that mplayer.exe can be invoked from any location on your system. Follow the instructions from this tutorial ("https://www.computerhope.com/issues/ch000549.htm") to add the folder to your system path. Add it under the variable named "Path" in both the user variables and system variables.                    
+                        4. Save and hit OK.                                                                                         
+                        5. open CMD and type mplayer. if you get "'mplayer' is not recognized as an internal or external command,     
+                           operable program or batch file." your attempt on adding the folder to the path failed. So try again. However if you get something else, its installed.                                                                                             
                         6. Now you can run the script and hear the audio.
-                    OS X: 
-                        By default afplay should be installed, open the terminal and type "$ which afplay". This sud return the path        
-        * Script wont press any buttons.
-        Solution: Take a look in the "Reedem_points.json" file, did you format the '"Keys" : ' the right way? Its supposed to be array format you know. Like ["b", "c", "9", "0"].        
-        * Dont know what keybindings i can use.
+                    OS X:                                                                                                       
+                        By default afplay should be installed, open the terminal and type "$ which afplay". This sud return the path                                                                                                                                       
+        * Script wont press any buttons.                                                                                              
+        Solution: Take a look in the "Reedem_points.json" file, did you format the '"Keys" : ' the right way? Its supposed to be array format you know. Like ["b", "c", "9", "0"].                                                                                             
+        * Dont know what keybindings i can use.                                                                                    
         Solution: Take a look at http://robotjs.io/docs/syntax, it sud have all the special keys. numbers and letters are just a or 3.
 
 
