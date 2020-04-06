@@ -4,7 +4,7 @@
 //*Made by: lobster/loster31345 from WiAD*//
 //*Requested by: Myian (twitch.tv/myian) *//
 ////////////////////////////////////////////
-
+//action can be replaced with say to not get colored text.
 const tmi = require("tmi.js");
 const robot = require('robotjs');
 var player = require('play-sound')(opts = {});
