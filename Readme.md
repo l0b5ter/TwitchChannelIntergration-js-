@@ -43,7 +43,7 @@ Feel free to take a look at the script "app.js", however if you make a change do
 
 
 
-How to solve some errors with script:                                                                                                 
+How to solve some errors with the script:                                                                                                 
 * Sript returning error on first run (tmi error).                                                                     
     - Solution: Is there a folder named node_modules in your folder? If not the packages didnt get installed. Normally this comes from that you installed Nodejs as global and not localy. But to simple fix this download this zip(https://www.dropbox.com/s/uklz57zr29f004i/node_modules.rar?dl=1), and extract its content "node_modules" over to your folder.       
 * Script wont play any sound.                                                                                               
@@ -56,7 +56,7 @@ How to solve some errors with script:
                         4. Save and hit OK.                                                                                         
                         5. open CMD and type mplayer. if you get "'mplayer' is not recognized as an internal or external command,     
                            operable program or batch file." your attempt on adding the folder to the path failed. So try again. However if you get something else, its installed.                                                                                             
-                        6. Now you can run the script and hear the audio.
+                        6. Now you can run the script and hear the audio.                                                             
                     OS X:                                                              
                         By default afplay should be installed, open the terminal and type "$ which afplay". This sud return the path   
 * Script wont press any buttons.                                                                                              
